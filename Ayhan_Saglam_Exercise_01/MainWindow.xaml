@@ -38,7 +38,23 @@
         <TextBox x:Name="AddressInput" Grid.Column="2" Grid.Row="4" ></TextBox>
         <!-- Province -->
         <TextBlock Grid.Column="1" Grid.Row="6" Text="Province: " FontWeight="Bold" HorizontalAlignment="Right" Width="55"></TextBlock>
-        <ListBox x:Name="ProvinceInput" Grid.Column="2" Grid.Row="6" ></ListBox>
+        <ComboBox x:Name="ProvinceInput" Grid.Column="2" Grid.Row="6" >
+            <ComboBoxItem>Alberta</ComboBoxItem>
+            <ComboBoxItem>British Columbia</ComboBoxItem>
+            <ComboBoxItem>Manitoba</ComboBoxItem>
+            <ComboBoxItem>New Brunswick</ComboBoxItem>
+            <ComboBoxItem>Newfoundland and Labrador</ComboBoxItem>
+            <ComboBoxItem>Nova Scotia</ComboBoxItem>
+            <ComboBoxItem>Ontario</ComboBoxItem>
+            <ComboBoxItem>Prince Edward Island</ComboBoxItem>
+            <ComboBoxItem>Quebec</ComboBoxItem>
+            <ComboBoxItem>Prince Edward Island</ComboBoxItem>
+            <ComboBoxItem>Northwest Territories</ComboBoxItem>
+            <ComboBoxItem>Yukon</ComboBoxItem>
+            <ComboBoxItem>Nunavut</ComboBoxItem>
+
+
+        </ComboBox>
         <!-- Dental Service Title -->
         <TextBlock Grid.Column="4" Grid.Row="2" Grid.ColumnSpan="2" Text="Dental Services Available" FontWeight="Bold"/>
 
