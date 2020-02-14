@@ -22,13 +22,6 @@ namespace Ayhan_Saglam_Exercise_01
     /// </summary>
     public partial class MainWindow : Window
     {
-        private string _patientName;
-        private string _patientAdress;
-        private double _value;
-
-
-
-
 
         public MainWindow()
         {
@@ -37,7 +30,8 @@ namespace Ayhan_Saglam_Exercise_01
 
         private void ButtonCalculate_OnClick(object sender, RoutedEventArgs e)
         {
-            
+            Patient patient = new Patient {PatientName = NameInput.Text,PatientAddress = AddressInput.Text};
+            TextBlockResultView.Text = patient.ToString();
         }
 
         private void ButtonClear_OnClick(object sender, RoutedEventArgs e)
