@@ -52,7 +52,7 @@ namespace Ayhan_Saglam_Exercise_01
 
         public override string ToString()
         {
-            return $"{PatientName} {PatientAddress}  ";
+            return $"{PatientName}  {Value} ";
         }
     }
 }

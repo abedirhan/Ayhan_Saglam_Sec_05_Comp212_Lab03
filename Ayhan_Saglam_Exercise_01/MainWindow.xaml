@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ayhan_Saglam_Exercise_01"
         mc:Ignorable="d"
-        Title="Saglam Dental Clinic" Height="260.501" Width="647.667">
+        Title="Saglam Dental Clinic" Height="261.168" Width="588.334">
     <Grid Margin="0,0,0,-1">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="Auto"  />
+            <ColumnDefinition Width="Auto" MinWidth="13" />
+            <ColumnDefinition Width="Auto" MinWidth="101"  />
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -27,7 +27,7 @@
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
         <!-- Title -->
-        <TextBlock Grid.Column="2" Text="Dental Services Available" FontWeight="Bold" FontSize="20" Margin="0,11,0,9"/>
+        <TextBlock Grid.Column="2" Text="Dental Payment System" FontWeight="Bold" FontSize="20" Margin="0,11,0,9"/>
         <!-- PatientName -->
         <TextBlock Grid.Column="1" Grid.Row="2" Text="Name Of Patient: " FontWeight="Bold" HorizontalAlignment="Right" Width="100" />
         <!-- Patient Name Input -->
@@ -48,7 +48,7 @@
             <ComboBoxItem>Ontario</ComboBoxItem>
             <ComboBoxItem>Prince Edward Island</ComboBoxItem>
             <ComboBoxItem>Quebec</ComboBoxItem>
-            <ComboBoxItem>Prince Edward Island</ComboBoxItem>
+            <ComboBoxItem>Saskatchewan</ComboBoxItem>
             <ComboBoxItem>Northwest Territories</ComboBoxItem>
             <ComboBoxItem>Yukon</ComboBoxItem>
             <ComboBoxItem>Nunavut</ComboBoxItem>
@@ -69,13 +69,13 @@
 
 
         <!-- Radio Button -->
-        <RadioButton x:Name="RdBtnSenior" Content="Senior" Grid.Column="1" Grid.Row="7" Margin="34,0,10,0" VerticalContentAlignment="Bottom"></RadioButton>
-        <RadioButton x:Name="RdBtnKids" Content="Kids and Youth" Grid.Column="2" Grid.Row="7" Margin="0,0,150,0" VerticalContentAlignment="Bottom"></RadioButton>
-        <RadioButton x:Name="RdBtnAdult" Content="Adult" Grid.Column="2" Grid.Row="7" Margin="110,0,66,0" VerticalContentAlignment="Bottom" ></RadioButton>
+        <RadioButton x:Name="RdBtnSenior" Content="Senior" Grid.Column="2" Grid.Row="7" Margin="1,0,191,0" VerticalContentAlignment="Bottom"></RadioButton>
+        <RadioButton x:Name="RdBtnKids" Content="Kids and Youth" Grid.Column="2" Grid.Row="7" Margin="63,0,87,0" VerticalContentAlignment="Bottom"></RadioButton>
+        <RadioButton x:Name="RdBtnAdult" Content="Adult" Grid.Column="2" Grid.Row="7" Margin="166,0,10,0" VerticalContentAlignment="Bottom" />
 
 
         <!-- Calculate Button -->
-        <Button x:Name="ButtonCalculate" Content="Calculate" Click="ButtonCalculate_OnClick" Grid.Column="4" Grid.Row="7" Margin="0,0,10,0" Width="85"></Button>
+        <Button x:Name="ButtonCalculate" Content="Calculate" Click="ButtonCalculate_OnClick" Grid.Column="4" Grid.Row="7" Margin="2,0,12,0"/>
         <!-- Clear -->
         <Button x:Name="ButtonClear" Content="Clear" Click="ButtonClear_OnClick" Grid.Column="5" Grid.Row="7" Margin="0,0,-34,0"></Button>
 
